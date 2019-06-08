@@ -7,19 +7,15 @@ import "./StarWars.css";
 export default function StarWarsCharacterList({ characters }) {
   return (
     <ul className="character-list">
-      {characters.map(character => {
-        console.log(character["birth_year"]);
-
-        return (
-          <StarWarsCharacter
-            key={character.url}
-            name={character.name}
-            height={character.height}
-            gender={character.gender}
-            birthYear={character["birth_year"]}
-          />
-        );
-      })}
+      {characters.map(character => (
+        <StarWarsCharacter
+          key={character.url}
+          name={character.name}
+          height={character.height}
+          gender={character.gender}
+          birthYear={character["birth_year"]}
+        />
+      ))}
     </ul>
   );
 }
