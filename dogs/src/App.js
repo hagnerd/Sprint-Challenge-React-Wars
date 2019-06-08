@@ -20,7 +20,6 @@ export default class App extends React.Component {
     fetch("https://dog.ceo/api/breeds/list/all")
       .then(res => res.json())
       .then(data => {
-        console.log(data);
 
         let arr = Object.entries(data.message).map(
           ([breedName, subBreeds]) => ({
