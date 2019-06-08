@@ -2,9 +2,11 @@ import React from "react";
 import StarWarsCharacter from "./StarWarsCharacter";
 import PropTypes from "prop-types";
 
+import "./StarWars.css";
+
 export default function StarWarsCharacterList({ characters }) {
   return (
-    <ul>
+    <ul className="character-list">
       {characters.map(character => {
         console.log(character["birth_year"]);
 
