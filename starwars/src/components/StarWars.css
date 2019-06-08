@@ -1,0 +1,26 @@
+.character-list {
+  list-style: none; 
+  width: 80%;
+  margin: 20px auto;
+}
+
+.character-list li {
+  margin-bottom: 20px;
+}
+
+.character {
+  background-color: #efd9b0;
+  padding: 15px 10px;
+}
+
+.character ul {
+  padding-left: 60px;
+}
+
+.character-name {
+  color:#556867;
+}
+
+.bold {
+  font-weight: bold;
+}
